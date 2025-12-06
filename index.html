@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026 武士新年会 in 東京</title>
+
+    <!-- OGP -->
+    <meta property="og:title" content="2026 武士新年会 in 東京">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://bushi-bushi.github.io/Bushi-Shinnenkai2026/">
+    <meta property="og:image" content="https://bushi-bushi.github.io/Bushi-Shinnenkai2026/images/ticket_shinnenkai.png">
+    <meta property="og:description" content="新たな年の新たな挑戦を此処に宣言せよ。2026年1月18日(日) 14:30〜 東京にて開催。">
+    <meta property="og:site_name" content="武士新年会 2026">
+    <meta property="og:locale" content="ja_JP">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image"
+        content="https://bushi-bushi.github.io/Bushi-Shinnenkai2026/images/ticket_shinnenkai.png">
+
+    <!-- Fonts & Libraries -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Shippori+Mincho:wght@400;500;600;700;800&family=Zen+Old+Mincho:wght@400;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.20/dist/lenis.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.1.20/dist/lenis.min.js"></script>
+</head>
+
+<body>
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- Header -->
+    <header class="fixed-top transition-all duration-300">
+        <div class="container d-flex justify-content-between align-items-center py-3">
+            <div class="h5 m-0 fw-bold header-logo">武士新年会 2026</div>
+            <a href="#tickets" class="btn btn-sm btn-outline-gold d-none d-md-block">参加申込</a>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- Main Visual -->
+        <section id="hero" class="d-flex align-items-center justify-content-center position-relative overflow-hidden">
+            <div class="hero-bg-overlay"></div>
+            <div class="container text-center position-relative z-1 hero-content d-flex flex-column align-items-center">
+
+                <!-- Main Title -->
+                <h1 class="hero-main-title fade-up mb-4">
+                    2026 武士新年会<br>
+                    <span class="in-place">in 東京</span>
+                </h1>
+
+                <!-- Subtitle -->
+                <h2 class="hero-subtitle mb-5 fade-up delay-2">
+                    新たな年の<br>
+                    新たな挑戦を<br>
+                    此処に宣言せよ。
+                </h2>
+
+                <!-- Date & Time -->
+                <p class="hero-date mb-5 fade-up delay-3">
+                    2026年1月18日(日)<br>
+                    <span class="hero-time">14:30-21:30</span>
+                </p>
+
+                <div class="fade-up delay-4">
+                    <a href="#tickets" class="btn btn-primary btn-lg px-5 py-3 rounded-0 border-0 shadow-lg">参加を申し込む</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section-padding position-relative">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <div class="section-inner-text text-center fade-up">
+                            <h2 class="section-title mb-5">武士新年会とは？</h2>
+
+                            <div class="about-text-content">
+                                <p>武士新年会は、ただの新年会ではありません。</p>
+
+                                <p>新しい一年の幕開けに、<br>
+                                    それぞれの志や挑戦を胸に抱いた仲間が集まり、<br>
+                                    今年の「一歩」を言葉にして共有する場です。</p>
+
+                                <p>雰囲気はあくまで穏やかで温かい。<br>
+                                    それでも、人が想いを語る姿には、<br>
+                                    どこか武士のような凛とした気配が漂います。</p>
+
+                                <p>一人ひとりが抱負や目標を口にすることで、<br>
+                                    自分の覚悟が整い、<br>
+                                    仲間の応援が力となり、<br>
+                                    自然と前へ進む勇気が湧いてくる。</p>
+
+                                <p>美味しい料理とお酒を楽しみながら、<br>
+                                    互いの挑戦を語り合い、讃え合い、<br>
+                                    新たな縁が軽やかにむすばれていく──<br>
+                                    そんな、あたたかくも芯の通った時間です。</p>
+
+                                <p class="highlight-text my-5">ここには、<br>
+                                    これからの一年を強く、しなやかに生きるための<br>
+                                    小さな“火種”があります。</p>
+
+                                <p class="fw-bold fs-5">2026年、あなたはどんな挑戦に向かいますか？<br>
+                                    その志を、ここから立ち上げましょう！</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Event Details -->
+        <section id="details" class="section-padding bg-darker">
+            <div class="container">
+                <h2 class="section-title text-center fade-up">開催概要</h2>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="card detail-card fade-up">
+                            <div class="card-body p-4 p-md-5">
+                                <dl class="row mb-0">
+                                    <dt class="col-sm-3">日程</dt>
+                                    <dd class="col-sm-9">2026年1月18日(日)</dd>
+
+                                    <dt class="col-sm-3">時間</dt>
+                                    <dd class="col-sm-9">14:30～21:30 <span class="text-muted small">(時間内は出入り自由)</span>
+                                    </dd>
+
+                                    <dt class="col-sm-3">会場</dt>
+                                    <dd class="col-sm-9">都内某イベントスペース<br><span class="text-muted small">（渋谷駅徒歩3分 /
+                                            詳細はお申し込み後にご案内します）</span></dd>
+
+                                    <dt class="col-sm-3">飲食</dt>
+                                    <dd class="col-sm-9">ケータリングをご用意します。差し入れ（手作り品は不可）も大歓迎です！</dd>
+
+                                    <dt class="col-sm-3">挑戦宣言</dt>
+                                    <dd class="col-sm-9">お一人様1分間の「2026年のチャレンジ宣言タイム」にご参加いただけます。</dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tickets -->
+        <section id="tickets" class="section-padding">
+            <div class="container">
+                <h2 class="section-title text-center fade-up">チケット</h2>
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-5 g-2 justify-content-center">
+
+                    <!-- 1. 新年会参加権 -->
+                    <div class="col fade-up">
+                        <div class="card ticket-card h-100">
+                            <div class="ticket-img-wrapper">
+                                <img src="images/ticket_shinnenkai.png" class="card-img-top" alt="新年会参加権">
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title">新年会参加権</h5>
+                                <p class="card-text price-text">¥10,000</p>
+                                <p class="card-text small text-muted">イベントへの参加、ケータリング飲食、チャレンジ宣言（1分）が含まれます。</p>
+                            </div>
+                            <div class="card-footer border-0 bg-transparent pb-4">
+                                <a href="https://nishinoinmel.base.shop/items/126443921"
+                                    class="btn btn-primary w-100 apply-btn" target="_blank"
+                                    rel="noopener noreferrer">申し込む</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2. 早割り -->
+                    <div class="col fade-up delay-1">
+                        <div class="card ticket-card h-100">
+                            <div class="ticket-img-wrapper">
+                                <img src="images/earlybird.png" class="card-img-top" alt="新年会参加権[早割り]">
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title">参加権[早割り]</h5>
+                                <p class="card-text price-text">¥9,000</p>
+                                <p class="card-text small text-muted">イベントへの参加、ケータリング飲食、チャレンジ宣言（1分）が含まれます。</p>
+                            </div>
+                            <div class="card-footer border-0 bg-transparent pb-4">
+                                <a href="https://nishinoinmel.base.shop/items/125292415"
+                                    class="btn btn-primary w-100 apply-btn" target="_blank"
+                                    rel="noopener noreferrer">申し込む</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 3. 梅 -->
+                    <div class="col fade-up delay-2">
+                        <div class="card ticket-card h-100">
+                            <div class="ticket-img-wrapper">
+                                <img src="images/sponsor_ume.png" class="card-img-top" alt="[梅] 新年会スポンサー権">
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title">[梅] スポンサー権</h5>
+                                <p class="card-text price-text">¥10,000</p>
+                                <p class="card-text small text-muted">
+                                    本イベントのスポンサーになれる権です。<br>新年会会場と本ウェブサイトにお名前（または企業名）の掲示をさせていただきます。</p>
+                            </div>
+                            <div class="card-footer border-0 bg-transparent pb-4">
+                                <a href="https://nishinoinmel.base.shop/items/125592862"
+                                    class="btn btn-primary w-100 apply-btn" target="_blank"
+                                    rel="noopener noreferrer">申し込む</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 4. 竹 -->
+                    <div class="col fade-up delay-3">
+                        <div class="card ticket-card h-100">
+                            <div class="ticket-img-wrapper">
+                                <img src="images/sponsor_take.png" class="card-img-top" alt="[竹] 新年会スポンサー権">
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title">[竹] スポンサー権</h5>
+                                <p class="card-text price-text">¥20,000</p>
+                                <p class="card-text small text-muted">
+                                    本イベントのスポンサーになれる権です。<br>新年会会場と本ウェブサイトにお名前（または企業名・ロゴ）の掲示をさせていただきます。</p>
+                            </div>
+                            <div class="card-footer border-0 bg-transparent pb-4">
+                                <a href="https://nishinoinmel.base.shop/items/126278890"
+                                    class="btn btn-primary w-100 apply-btn" target="_blank"
+                                    rel="noopener noreferrer">申し込む</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 5. 松 -->
+                    <div class="col fade-up delay-4">
+                        <div class="card ticket-card h-100">
+                            <div class="ticket-img-wrapper">
+                                <img src="images/sponsor_matsu.png" class="card-img-top" alt="[松] 新年会スポンサー権">
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title">[松] スポンサー権</h5>
+                                <p class="card-text price-text">¥30,000</p>
+                                <p class="card-text small text-muted">
+                                    本イベントのスポンサーになれる権です。<br>新年会会場と本ウェブサイトにお名前（または企業名・ロゴ）の掲示をさせていただきます。</p>
+                            </div>
+                            <div class="card-footer border-0 bg-transparent pb-4">
+                                <a href="https://nishinoinmel.base.shop/items/126278946"
+                                    class="btn btn-primary w-100 apply-btn" target="_blank"
+                                    rel="noopener noreferrer">申し込む</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2nd Row Items -->
+                    <!-- 6. Non-al Champagne -->
+                    <div class="col fade-up">
+                        <div class="card ticket-card h-100">
+                            <div class="ticket-img-wrapper">
+                                <img src="images/nonal_shampagne.png" class="card-img-top" alt="ノンアルシャンパン">
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title">ノンアルシャンパン</h5>
+                                <p class="card-text price-text">¥5,000</p>
+                                <p class="card-text small text-muted">
+                                    武士たちにノンアルコールシャンパンを1本差し入れできる権です。<br>※ご本人の参加チケットではありません</p>
+                            </div>
+                            <div class="card-footer border-0 bg-transparent pb-4">
+                                <a href="https://nishinoinmel.base.shop/items/126279494"
+                                    class="btn btn-sm btn-outline-gold w-100" target="_blank">申込</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 7. Champagne -->
+                    <div class="col fade-up delay-1">
+                        <div class="card ticket-card h-100">
+                            <div class="ticket-img-wrapper">
+                                <img src="images/shampagne.png" class="card-img-top" alt="シャンパン">
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title">シャンパン</h5>
+                                <p class="card-text price-text">¥10,000</p>
+                                <p class="card-text small text-muted">武士たちにシャンパンを1本差し入れできる権です。<br>※ご本人の参加チケットではありません</p>
+                            </div>
+                            <div class="card-footer border-0 bg-transparent pb-4">
+                                <a href="https://nishinoinmel.base.shop/items/126279415"
+                                    class="btn btn-sm btn-outline-gold w-100" target="_blank">申込</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 8. Extend Time -->
+                    <div class="col fade-up delay-2">
+                        <div class="card ticket-card h-100">
+                            <div class="ticket-img-wrapper">
+                                <img src="images/ticket_extend_time.png" class="card-img-top" alt="延長権">
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title">チャレンジ宣言タイム1分延長権</h5>
+                                <p class="card-text price-text">¥1,000</p>
+                                <p class="card-text small text-muted">チャレンジ宣言タイムを1分間延長できます。複数購入もOK。熱い想いを長く語りたい方向け。</p>
+                            </div>
+                            <div class="card-footer border-0 bg-transparent pb-4">
+                                <a href="https://nishinoinmel.base.shop/items/125716482"
+                                    class="btn btn-sm btn-outline-gold w-100" target="_blank">申込</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 9. BGM/Video -->
+                    <div class="col fade-up delay-3">
+                        <div class="card ticket-card h-100">
+                            <div class="ticket-img-wrapper">
+                                <img src="images/ticket_bgm_video.png" class="card-img-top" alt="BGM権">
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title">BGM/動画を流す権</h5>
+                                <p class="card-text price-text">¥1,500</p>
+                                <p class="card-text small text-muted">会場であなたの選んだBGMや制作した動画を流せます（公序良俗に反しないものに限ります）。</p>
+                            </div>
+                            <div class="card-footer border-0 bg-transparent pb-4">
+                                <a href="https://nishinoinmel.base.shop/items/125716513"
+                                    class="btn btn-sm btn-outline-gold w-100" target="_blank">申込</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 10. Sashiire -->
+                    <div class="col fade-up delay-4">
+                        <div class="card ticket-card h-100">
+                            <div class="ticket-img-wrapper">
+                                <img src="images/sashiire.png" class="card-img-top" alt="差し入れ権">
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title">差し入れ権</h5>
+                                <p class="card-text price-text">¥1,000</p>
+                                <p class="card-text small text-muted">買い出しの飲食物の予算に充てさせていただき、支援者のお名前を会場に掲載します。</p>
+                            </div>
+                            <div class="card-footer border-0 bg-transparent pb-4">
+                                <a href="https://nishinoinmel.base.shop/items/125716439"
+                                    class="btn btn-sm btn-outline-gold w-100" target="_blank">申込</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Staff Tickets -->
+        <section id="staff-tickets" class="section-padding bg-darker">
+            <div class="container">
+                <h2 class="section-title text-center fade-up">スタッフとして参加</h2>
+                <p class="text-center mb-5 fade-up text-muted">イベントを一緒に作り上げる仲間を募集します！<br>すべてのスタッフ権には新年会参加権が含まれています。</p>
+                <div class="row g-4 justify-content-center">
+                    <!-- Staff Roles -->
+                    <div class="col-6 col-md-4 col-lg-3 fade-up">
+                        <div class="card ticket-card">
+                            <div class="ticket-img-wrapper original-ratio"><img src="images/takoyaki.png"
+                                    class="card-img-top" alt="たこ焼き係"></div>
+                            <div class="card-body text-center">
+                                <h6 class="card-title">たこ焼き係</h6>
+                                <p class="price-text small">¥8,800</p>
+                            </div>
+                            <div class="card-footer border-0 bg-transparent p-2"><a
+                                    href="https://nishinoinmel.base.shop/items/125785419"
+                                    class="btn btn-sm btn-secondary w-100" target="_blank"
+                                    rel="noopener noreferrer">この役割で参加</a></div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 fade-up">
+                        <div class="card ticket-card">
+                            <div class="ticket-img-wrapper original-ratio"><img src="images/kaidashi.png"
+                                    class="card-img-top" alt="買い出し係"></div>
+                            <div class="card-body text-center">
+                                <h6 class="card-title">買い出し係</h6>
+                                <p class="price-text small">¥8,800</p>
+                            </div>
+                            <div class="card-footer border-0 bg-transparent p-2"><a
+                                    href="https://nishinoinmel.base.shop/items/125786080"
+                                    class="btn btn-sm btn-secondary w-100" target="_blank"
+                                    rel="noopener noreferrer">この役割で参加</a></div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 fade-up">
+                        <div class="card ticket-card">
+                            <div class="ticket-img-wrapper original-ratio"><img src="images/mc.png" class="card-img-top"
+                                    alt="MC・盛り上げ係"></div>
+                            <div class="card-body text-center">
+                                <h6 class="card-title">MC・盛り上げ係</h6>
+                                <p class="price-text small">¥8,800</p>
+                            </div>
+                            <div class="card-footer border-0 bg-transparent p-2"><a
+                                    href="https://nishinoinmel.base.shop/items/125786665"
+                                    class="btn btn-sm btn-secondary w-100" target="_blank"
+                                    rel="noopener noreferrer">この役割で参加</a></div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 fade-up">
+                        <div class="card ticket-card">
+                            <div class="ticket-img-wrapper original-ratio"><img src="images/sound.png"
+                                    class="card-img-top" alt="音響係">
+                            </div>
+                            <div class="card-body text-center">
+                                <h6 class="card-title">音響係</h6>
+                                <p class="price-text small">¥8,800</p>
+                            </div>
+                            <div class="card-footer border-0 bg-transparent p-2"><a
+                                    href="https://nishinoinmel.base.shop/items/125787294"
+                                    class="btn btn-sm btn-secondary w-100" target="_blank"
+                                    rel="noopener noreferrer">この役割で参加</a></div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 fade-up">
+                        <div class="card ticket-card">
+                            <div class="ticket-img-wrapper original-ratio"><img src="images/nafuda.png"
+                                    class="card-img-top" alt="名札作成係"></div>
+                            <div class="card-body text-center">
+                                <h6 class="card-title">名札作成係</h6>
+                                <p class="price-text small">¥8,800</p>
+                            </div>
+                            <div class="card-footer border-0 bg-transparent p-2"><a
+                                    href="https://nishinoinmel.base.shop/items/125787552"
+                                    class="btn btn-sm btn-secondary w-100" target="_blank"
+                                    rel="noopener noreferrer">この役割で参加</a></div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 fade-up">
+                        <div class="card ticket-card">
+                            <div class="ticket-img-wrapper original-ratio"><img src="images/camera.png"
+                                    class="card-img-top" alt="撮影係">
+                            </div>
+                            <div class="card-body text-center">
+                                <h6 class="card-title">撮影係</h6>
+                                <p class="price-text small">¥8,800</p>
+                            </div>
+                            <div class="card-footer border-0 bg-transparent p-2"><a
+                                    href="https://nishinoinmel.base.shop/items/125787887"
+                                    class="btn btn-sm btn-secondary w-100" target="_blank"
+                                    rel="noopener noreferrer">この役割で参加</a></div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 fade-up">
+                        <div class="card ticket-card">
+                            <div class="ticket-img-wrapper original-ratio"><img src="images/drink.png"
+                                    class="card-img-top" alt="飲み物係">
+                            </div>
+                            <div class="card-body text-center">
+                                <h6 class="card-title">飲み物係</h6>
+                                <p class="price-text small">¥8,800</p>
+                            </div>
+                            <div class="card-footer border-0 bg-transparent p-2"><a
+                                    href="https://nishinoinmel.base.shop/items/126274431"
+                                    class="btn btn-sm btn-secondary w-100" target="_blank"
+                                    rel="noopener noreferrer">この役割で参加</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Secretariat Message Section -->
+        <section id="secretariat-message" class="section-padding">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <div class="message-box p-5 fade-up">
+                            <h2 class="section-title text-center mb-5">事務局より</h2>
+                            <div class="message-content">
+                                <p>昨年の新年会2025は、熱気と活気に包まれあっという間の2時間でした。多くの参加者様から「もっとじっくり語り合いたかった」「時間が足りなかった」というお声を頂戴しました。
+                                </p>
+                                <p>そこで、来る「武士新年会2026」では、皆様が心ゆくまで交流し、絆を深められるような時間と空間をご用意いたしました！</p>
+                                <p>今年は、なんと7時間貸し切りのイベントスペースです。<br>靴を脱いでリラックスできる、まるで自宅のような寛ぎの空間で、時間を気にせず語り合えます。<br>もちろん、時間内の出入りは自由。途中参加や途中退室も大歓迎ですので、ご自身の気分やご都合に合わせて、自由なスタイルでお過ごしください。
+                                </p>
+                                <p>素敵なケータリングのお料理とドリンクをご用意して、皆様をお待ちしています。<br>もちろん差し入れも大歓迎です。<br>カウンターキッチンもありますので、簡単な調理も可能です。<br>お気に入りの一品を持ち寄ったり、その場で腕を振るったりと、食を通じた交流もぜひお楽しみください。
+                                </p>
+                                <p>チャレンジ宣言タイムも、昨年は会場の時間の都合上１人30秒でしたが、今年は1分間にいたしました！
+                                    会場にはプロジェクターやマイクも完備してありますので、スライドや動画を使ったプレゼンも可能です。あなたの夢や目標、熱い想いを存分に表現してください。</p>
+                                <p>そして、今回の新年会は、主催の二人だけでなく、皆様と共に創り上げたいと願っています。<br>昨年は準備から当日の運営まで二人で行いましたが、今年は「スタッフになる権」を通じて、一緒に素晴らしい新年会を創り上げる仲間を募集しています。<br>あなたの力を貸していただけませんか？
+                                </p>
+                                <p class="text-end mt-4 fw-bold">「武士新年会2026」事務局</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Venue Images -->
+        <section id="venue-images" class="section-padding bg-darker pb-0">
+            <div class="container">
+                <h2 class="section-title text-center fade-up">会場イメージ</h2>
+                <div class="row g-3 g-md-4 justify-content-center">
+                    <div class="col-6 col-md-4 js-fade-up fade-up"><img src="images/image.jpeg"
+                            class="img-fluid gallery-img" alt="会場1"></div>
+                    <div class="col-6 col-md-4 js-fade-up fade-up delay-1"><img src="images/image (1).jpeg"
+                            class="img-fluid gallery-img" alt="会場2"></div>
+                    <div class="col-6 col-md-4 js-fade-up fade-up delay-2"><img src="images/image.jpeg"
+                            class="img-fluid gallery-img" alt="会場3"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Previous Event Gallery -->
+        <section id="gallery" class="section-padding bg-darker">
+            <div class="container">
+                <h2 class="section-title text-center fade-up">前回の様子</h2>
+                <div class="row g-3 g-md-4 justify-content-center">
+                    <!-- 9 Images Grid (Unique) -->
+                    <div class="col-6 col-md-4 js-fade-up fade-up"><img src="images/IMG_9091.jpg"
+                            class="img-fluid gallery-img" alt="様子1"></div>
+                    <div class="col-6 col-md-4 js-fade-up fade-up delay-1"><img src="images/IMG_9045.jpg"
+                            class="img-fluid gallery-img" alt="様子2"></div>
+                    <div class="col-6 col-md-4 js-fade-up fade-up delay-2"><img src="images/IMG_9056.jpg"
+                            class="img-fluid gallery-img" alt="様子3"></div>
+
+                    <div class="col-6 col-md-4 js-fade-up fade-up"><img src="images/IMG_9029.jpg"
+                            class="img-fluid gallery-img" alt="様子4"></div>
+                    <div class="col-6 col-md-4 js-fade-up fade-up delay-1"><img src="images/IMG_9143.JPG"
+                            class="img-fluid gallery-img" alt="様子5"></div>
+                    <div class="col-6 col-md-4 js-fade-up fade-up delay-2"><img src="images/IMG_9080.jpg"
+                            class="img-fluid gallery-img" alt="様子6"></div>
+
+                    <div class="col-6 col-md-4 js-fade-up fade-up"><img src="images/IMG_9010.jpg"
+                            class="img-fluid gallery-img" alt="様子7"></div>
+                    <div class="col-6 col-md-4 js-fade-up fade-up delay-1"><img src="images/IMG_9069.jpg"
+                            class="img-fluid gallery-img" alt="様子8"></div>
+                    <div class="col-6 col-md-4 js-fade-up fade-up delay-2"><img
+                            src="images/LINE_ALBUM_memories_250119_21.jpg" class="img-fluid gallery-img" alt="様子9">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sponsors Section -->
+        <section id="sponsors" class="section-padding">
+            <div class="container">
+                <h2 class="section-title text-center fade-up">スポンサー</h2>
+                <p class="text-center fade-up mb-5">スポンサー様のご支援に感謝いたします。<br><span class="small text-muted">（現在準備中）</span>
+                </p>
+            </div>
+        </section>
+
+        <!-- Presented by Section -->
+        <section id="presented-by" class="section-padding">
+            <div class="container">
+                <h2 class="section-title text-center fade-up">Presented by</h2>
+                <div class="row g-5 justify-content-center align-items-center mt-3">
+                    <div class="col-6 col-md-4 text-center fade-up">
+                        <img src="images/IMG_3482.JPG" class="img-fluid presented-by-logo" alt="Logo">
+                    </div>
+                    <div class="col-6 col-md-4 text-center fade-up">
+                        <img src="images/dentoya_logo_normal.png" class="img-fluid presented-by-logo" alt="Logo">
+                    </div>
+                    <div class="col-6 col-md-4 text-center fade-up">
+                        <img src="images/momentum_lecture_melbourne_1.png" class="img-fluid presented-by-logo"
+                            alt="Logo">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center py-4">
+        <p>&copy; 2026 武士新年会 All Rights Reserved.</p>
+        <p class="fs-5">主催：御結（おむすび）会</p>
+        <p>ご縁を結び、絆を育み、共に未来へ</p>
+    </footer>
+
+    <!-- Modal -->
+    <div id="modal" class="modal-backdrop" style="display: none;">
+        <div class="modal-content">
+            <h4 id="modal-title"></h4>
+            <p>お申し込みありがとうございます！<br>追って詳細をご連絡いたします。</p>
+            <button id="modal-close" class="btn btn-primary">閉じる</button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
