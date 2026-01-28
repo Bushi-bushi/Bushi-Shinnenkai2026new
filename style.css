@@ -410,7 +410,7 @@ dt {
 
 /* Presented By */
 .presented-by-logo {
-    max-height: 60px;
+    max-height: 100px;
     opacity: 1;
     filter: none;
     transition: all 0.3s ease;
